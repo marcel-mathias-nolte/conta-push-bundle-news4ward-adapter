@@ -12,7 +12,7 @@
  * @license   LGPL-3.0-or-later
  */
 
-namespace MarcelMathiasNolte\ContaoPushBundleNews4wardAdapterBundle;
+//namespace MarcelMathiasNolte\ContaoPushBundleNews4wardAdapterBundle;
 
 $GLOBALS['TL_DCA']['tl_news4ward_article']['list']['operations']['sendPush'] = [
 	'href' => 'act=edit&sendPush=1',
