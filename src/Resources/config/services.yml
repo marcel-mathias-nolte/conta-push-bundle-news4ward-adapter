@@ -7,3 +7,11 @@ services:
         Symfony\Component\DependencyInjection\ContainerAwareInterface:
             calls:
                 - ["setContainer", ["@service_container"]]
+    contao_push.data_container.news4ward:
+        class: MarcelMathiasNolte\ContaoPushBundleNews4wardAdapterBundle\DataContainer\News4Ward
+        arguments:
+            - '@contao_push.manager'
+            - '@request_stack'
+            - '@contao.framework'
+        tags:
+            - { name: contao.callback, target: config.onload, table: tl_news4ward_article, method: onLoad }
