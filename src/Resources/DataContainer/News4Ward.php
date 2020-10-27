@@ -61,7 +61,7 @@ class News4Ward
 		$model = $adapter->findByPk($dc->id);
 
 		$title = $model->title;
-		$body = $model->subheadline;
+		$body = \Soundasleep\Html2Text::convert($model->teaser);
 		$url = sprintf(
 			'%s/%s',
 			$request->getSchemeAndHttpHost(),
