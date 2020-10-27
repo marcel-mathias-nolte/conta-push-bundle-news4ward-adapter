@@ -60,7 +60,7 @@ class News4Ward
 
 		$model = $adapter->findByPk($dc->id);
 
-		$title = $model->headline;
+		$title = $model->title;
 		$body = $model->subheadline;
 		$url = sprintf(
 			'%s/%s',
