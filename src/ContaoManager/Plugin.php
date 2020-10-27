@@ -27,7 +27,7 @@ class Plugin implements BundlePluginInterface
     {
         return [
             BundleConfig::create(ContaoPushBundleNews4wardAdapterBundle::class)
-                ->setLoadAfter([ContaoCoreBundle::class]),
+                ->setLoadAfter([ContaoPushBundle::class, 'news4ward']),
         ];
     }
 }
