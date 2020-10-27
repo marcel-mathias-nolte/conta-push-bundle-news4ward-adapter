@@ -23,7 +23,8 @@
         "contao/core-bundle": "^4.4",
         "contao-community-alliance/composer-plugin": "^2.4.0 || 3.*",
         "psi/news4ward": "~2",
-        "dreibein/contao-push-bundle": "^1.0.5"
+        "dreibein/contao-push-bundle": "^1.0.5",
+        "soundasleep/html2text": "~1.1"
     },
     "require-dev": {
         "doctrine/doctrine-cache-bundle": "^1.3",
@@ -31,8 +32,7 @@
         "php-http/guzzle6-adapter": "^1.1",
         "php-http/message-factory": "^1.0.2",
         "phpunit/phpunit": "^5.7.26",
-        "symfony/phpunit-bridge": "^3.2",
-        "soundasleep/html2text": "~1.1"
+        "symfony/phpunit-bridge": "^3.2"
     },
     "extra": {
         "contao-manager-plugin": "MarcelMathiasNolte\\ContaoPushBundleNews4wardAdapterBundle\\ContaoManager\\Plugin"
